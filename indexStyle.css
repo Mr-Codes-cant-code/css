@@ -1,0 +1,100 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* Reset the margin and padding values */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define the values for style*/
+:root {
+  --backgroundColourForBody: #FAF2CD;
+  --bodyH1FontSize: 3rem;
+  --backgroundColourForHeader: #fcfcfc;
+}
+
+@media (width < 44rem){
+  :root{
+    --bodyH1FontSize: 2rem;
+    --backgroundColourForArticle: #fcfcfc;
+  }
+
+
+  header {
+    box-sizing: border-box;
+  }
+
+  header h1 {
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  article {
+    background-color: var(--backgroundColourForArticle);
+    padding-left: 16px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 8px;
+    border: 2px solid #0f1108;
+  }
+
+  article h1 {
+    font-size: 1.5rem;
+    font-family: inherit;
+  }
+
+  article p {
+    font-size: 1rem;
+    font-family: inherit;
+  }
+}
+
+body {
+  /* */
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: var(--backgroundColourForBody);
+  
+}
+
+
+header {
+  background-color: var(--backgroundColourForHeader);
+}
+header h1 {
+  /* font handeling for H1 */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  font-size: var(--bodyH1FontSize);
+  
+  /* text handeling */
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  color: #0f1108;
+
+
+  /* Style */
+  border-bottom: 2px solid #0f1108;
+}
